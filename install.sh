@@ -10,9 +10,7 @@ pip install "git+https://github.com/facebookresearch/pytorch3d.git"
 
 cd third_party/test
 git clone https://github.com/otaheri/GrabNet
-mv utils.py grabnet/tools
-
 mv GrabNet/grabnet .
+mv utils.py grabnet/tools
 rm -rf GrabNet
-mv utils.py grabnet/tools/utils.py
 cd ../..
