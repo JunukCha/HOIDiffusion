@@ -32,8 +32,6 @@ source scripts/extract_mv_grabnet_pth.sh
 source scripts/download_midas_models.sh
 ```
 
-Download it in root folder.
-
 ## Create Test Data
 ```
 source scripts/create_test_data.sh
@@ -41,6 +39,8 @@ source scripts/create_test_data.sh
 
 ## Download HOI network
 <a href="https://drive.google.com/drive/folders/1uAerYKpe3kVe1ypr3hTLwvjeBCbX1RqN?usp=sharing">Models</a>
+
+Download it in root folder.
 
 ## Run
 ```
