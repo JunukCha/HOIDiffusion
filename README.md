@@ -6,46 +6,48 @@ Official implementation of HOIDiffusion: Generating Realistic 3D Hand-Object Int
 
 # Easy to Install and Run
 
-## Clone
+1. Clone
 ```
 git clone https://github.com/JunukCha/HOIDiffusion.git
 cd HOIDiffsion
 ```
 
-## Install
+2. Install
 ```
 source scripts/install.sh
 ```
 
-## Download GRAB Trained Networks
+3. Download GRAB Trained Networks
 <a href="https://grab.is.tue.mpg.de/download.php">GRAB</a>
 
 Sign in and find `Trained Networks` in the download menu. Download `models.zip` in `third_party/test` folder.
 
-## Extract and Move GRAB Trained Networks
+4. Extract and Move GRAB Trained Networks
 ```
 source scripts/extract_mv_grabnet_pth.sh
 ```
 
-## Download midas_models
+5. Download midas_models
 ```
 source scripts/download_midas_models.sh
 ```
 
-## Create Test Data
+6. Create Test Data
 ```
 source scripts/create_test_data.sh
 ```
 
-## Download HOI network
+7. Download HOI network
 <a href="https://drive.google.com/drive/folders/1uAerYKpe3kVe1ypr3hTLwvjeBCbX1RqN?usp=sharing">Models</a>
 
 Download it in root folder.
 
-## Run
+8. Run
 ```
 source scripts/run.sh
 ```
+
+---
 
 <!-- <div align="center"> -->
 ![teaser](static/teaser.png)
