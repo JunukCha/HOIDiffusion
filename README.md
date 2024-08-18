@@ -45,7 +45,7 @@ Download it in root folder.
 
 8. Run
 ```
-source scripts/run.sh
+source scripts/test.sh
 ```
 
 ---
