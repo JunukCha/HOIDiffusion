@@ -36,6 +36,7 @@ source scripts/download_midas_models.sh
 ```
 source scripts/create_test_data.sh
 ```
+You can adjust the --obj-path and --rhm-path according to your needs.
 
 7. Download HOI network
 <a href="https://drive.google.com/drive/folders/1uAerYKpe3kVe1ypr3hTLwvjeBCbX1RqN?usp=sharing">Models</a>
