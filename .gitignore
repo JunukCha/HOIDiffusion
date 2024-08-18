@@ -2,6 +2,7 @@ test_data
 output
 midas_models
 third_party/test/grabnet
+third_party/test/logs
 midas_models
 ldm
 __pycache__
