@@ -3,3 +3,7 @@ output
 midas_models
 third_party/test/grabnet
 midas_models
+ldm
+__pycache__
+model_condition.pth
+model_sd_finetuned.ckpt
