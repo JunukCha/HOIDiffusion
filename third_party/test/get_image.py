@@ -56,16 +56,28 @@ def getObjPath(obj_path):
         obj_path = [obj_path]
     input_obj_path = []
     for path in obj_path:
-        all_objs = os.listdir(path)
-        for obj in all_objs:
-            '''===This is used to obtain object model==='''
-            obj_model_path = os.path.join(path, obj, "align")
-            if not os.path.exists(obj_model_path): continue
-            obj_files = os.listdir(obj_model_path)
-            for file in obj_files:
-                if file[-3:] == "obj" or file[-3:] == "ply":
-                    input_obj_path.append(os.path.join(obj_model_path, file))
+        obj_files = os.listdir(path)
+        for file in obj_files:
+            if file[-3:] == "obj" or file[-3:] == "ply":
+                input_obj_path.append(os.path.join(path, file))
+                print(input_obj_path)
     return input_obj_path
+
+# def getObjPath(obj_path):
+#     if not isinstance(obj_path, list):
+#         obj_path = [obj_path]
+#     input_obj_path = []
+#     for path in obj_path:
+#         all_objs = os.listdir(path)
+#         for obj in all_objs:
+#             '''===This is used to obtain object model==='''
+#             obj_model_path = os.path.join(path, obj, "align")
+#             if not os.path.exists(obj_model_path): continue
+#             obj_files = os.listdir(obj_model_path)
+#             for file in obj_files:
+#                 if file[-3:] == "obj" or file[-3:] == "ply":
+#                     input_obj_path.append(os.path.join(obj_model_path, file))
+#     return input_obj_path
 
 def getObjCat(obj_name:str):
     if "contactpose_" in obj_name:
@@ -335,7 +347,8 @@ def grab_new_objs(grabnet, objs_path, rot=True, n_samples=10, it=1, scale=1.):
                    f'Gray  --->  GrabNet generated grasp\n')
 
     bps = bps_torch(custom_basis = grabnet.bps)
-    path_name = objs_path.split("/")[-3]
+    # path_name = objs_path.split("/")[-3]
+    path_name = objs_path.split("/")[-1].replace(".ply", "")
     if not isinstance(objs_path, list):
         objs_path = [objs_path]
 
@@ -556,13 +569,11 @@ if __name__ == '__main__':
     print(f"======There are {len(paths)} objects models======")
     # test_iters = 200
     for it in tqdm(range(iters)):
-        for path in paths:
+        for path in paths[:1]:
             obj_data = grab_new_objs(grabnet, path, rot=True, n_samples=args.bs, it = it)
             all_data += obj_data
-            with open(json_file_path_train, "a", newline='') as outfile:
+            with open(json_file_path_test, "a", newline='') as outfile:
                 writer = csv.writer(outfile)
                 writer.writerows(all_data)
                 outfile.close()
             all_data = []
-
-
