@@ -3,7 +3,7 @@ diffusers==0.11.1
 invisible_watermark==0.1.5
 einops==0.6.0
 omegaconf==2.3.0
-pytorch_lightning==1.5.9
+# pytorch_lightning==1.5.9
 gradio
 opencv-python
 pudb
