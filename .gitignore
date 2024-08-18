@@ -2,3 +2,5 @@ test_data
 output
 midas_models
 third_party/test/grabnet
+third_party/test/utils.py
+midas_models
