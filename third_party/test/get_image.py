@@ -569,7 +569,7 @@ if __name__ == '__main__':
     print(f"======There are {len(paths)} objects models======")
     # test_iters = 200
     for it in tqdm(range(iters)):
-        for path in paths[:1]:
+        for path in paths:
             obj_data = grab_new_objs(grabnet, path, rot=True, n_samples=args.bs, it = it)
             all_data += obj_data
             with open(json_file_path_test, "a", newline='') as outfile:
