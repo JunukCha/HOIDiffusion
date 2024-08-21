@@ -55,7 +55,7 @@ You can adjust the --obj-path and --rhm-path according to your needs.
 ### 8. Download HOI network
 <a href="https://drive.google.com/drive/folders/1uAerYKpe3kVe1ypr3hTLwvjeBCbX1RqN?usp=sharing">Models</a>
 
-Download it in root folder.
+Download it in root folder `HOIDiffusion`.
 
 ### 9. Run
 ```
