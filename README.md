@@ -4,7 +4,7 @@ Official implementation of HOIDiffusion: Generating Realistic 3D Hand-Object Int
 
 [CVPR'24] | 📝 <a href="https://arxiv.org/abs/2403.12011">Arxiv</a> | 🗒️ <a href="https://mq-zhang1.github.io/HOIDiffusion/">Project Page</a> | 📽️ <a href="https://www.youtube.com/watch?v=YD_buFwMX44">Video</a> |✨ <a href="https://drive.google.com/drive/folders/1uAerYKpe3kVe1ypr3hTLwvjeBCbX1RqN?usp=sharing">Models</a>
 
-# Easy to Install and Run
+# Easy to Install and Run Demo
 
 ### CUDA
 Ensure that your CUDA version is set to 11.7.
