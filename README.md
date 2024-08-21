@@ -33,23 +33,30 @@ Sign in and find `Trained Networks` in the download menu. Download `models.zip` 
 source scripts/extract_mv_grabnet_pth.sh
 ```
 
-5. Download midas_models
+5. Download GRAB object meshes
+<a href="https://grab.is.tue.mpg.de/download.php">GRAB</a>
+![image](https://github.com/user-attachments/assets/6e4f98f2-5326-46b2-acec-98f3da57df92)
+
+Put the folder `contact_meshes` in the `/data/GRAB/tools/object_meshes`.
+Or put the folder `contact_meshes` in the other folder and edit the `--obj-path` in [this file](https://github.com/JunukCha/HOIDiffusion/blob/f159a5236009a971c7f7b3477a6aa86a69a050ae/scripts/create_test_data.sh#L8C25-L8C33).
+
+6. Download midas_models
 ```
 source scripts/download_midas_models.sh
 ```
 
-6. Create Test Data
+7. Create Test Data
 ```
 source scripts/create_test_data.sh
 ```
 You can adjust the --obj-path and --rhm-path according to your needs.
 
-7. Download HOI network
+8. Download HOI network
 <a href="https://drive.google.com/drive/folders/1uAerYKpe3kVe1ypr3hTLwvjeBCbX1RqN?usp=sharing">Models</a>
 
 Download it in root folder.
 
-8. Run
+9. Run
 ```
 source scripts/test.sh
 ```
