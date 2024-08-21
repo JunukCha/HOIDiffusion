@@ -63,9 +63,9 @@ You can adjust the --obj-path and --rhm-path according to your needs.
 
 Download it in root folder `HOIDiffusion`.
 
-### 9. Run
+### 9. Run Demo
 ```
-source scripts/test.sh
+source scripts/demo.sh
 ```
 
 ---
