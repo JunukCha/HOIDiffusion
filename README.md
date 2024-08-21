@@ -12,51 +12,51 @@ export PATH=/usr/local/cuda-11.7/bin:$PATH
 export LD_LIBRARY_PATH=/usr/local/cuda-11.7/lib64:$LD_LIBRARY_PATH
 ```
 
-1. Clone
+### 1. Clone
 ```
 git clone https://github.com/JunukCha/HOIDiffusion.git
 cd HOIDiffsion
 ```
 
-2. Install
+### 2. Install
 ```
 source scripts/install.sh
 ```
 
-3. Download GRAB Trained Networks
+### 3. Download GRAB Trained Networks
 <a href="https://grab.is.tue.mpg.de/download.php">GRAB</a>
 
 Sign in and find `Trained Networks` in the download menu. Download `models.zip` in `third_party/test` folder.
 
-4. Extract and Move GRAB Trained Networks
+### 4. Extract and Move GRAB Trained Networks
 ```
 source scripts/extract_mv_grabnet_pth.sh
 ```
 
-5. Download GRAB object meshes
+### 5. Download GRAB object meshes
 <a href="https://grab.is.tue.mpg.de/download.php">GRAB</a>
 ![image](https://github.com/user-attachments/assets/6e4f98f2-5326-46b2-acec-98f3da57df92)
 
 Put the folder `contact_meshes` in the `/data/GRAB/tools/object_meshes`.
 Or put the folder `contact_meshes` in the other folder and edit the `--obj-path` in [this file](https://github.com/JunukCha/HOIDiffusion/blob/f159a5236009a971c7f7b3477a6aa86a69a050ae/scripts/create_test_data.sh#L8C25-L8C33).
 
-6. Download midas_models
+### 6. Download midas_models
 ```
 source scripts/download_midas_models.sh
 ```
 
-7. Create Test Data
+### 7. Create Test Data
 ```
 source scripts/create_test_data.sh
 ```
 You can adjust the --obj-path and --rhm-path according to your needs.
 
-8. Download HOI network
+### 8. Download HOI network
 <a href="https://drive.google.com/drive/folders/1uAerYKpe3kVe1ypr3hTLwvjeBCbX1RqN?usp=sharing">Models</a>
 
 Download it in root folder.
 
-9. Run
+### 9. Run
 ```
 source scripts/test.sh
 ```
