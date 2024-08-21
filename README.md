@@ -35,10 +35,11 @@ source scripts/extract_mv_grabnet_pth.sh
 
 ### 5. Download GRAB object meshes
 <a href="https://grab.is.tue.mpg.de/download.php">GRAB</a>
-![image](https://github.com/user-attachments/assets/6e4f98f2-5326-46b2-acec-98f3da57df92)
+![image](https://github.com/user-attachments/assets/8cd1f225-9ba5-4f8b-9e9d-e1f872441d34)
 
-Put the folder `contact_meshes` in the `/data/GRAB/tools/object_meshes`.
-Or put the folder `contact_meshes` in the other folder and edit the `--obj-path` in [this file](https://github.com/JunukCha/HOIDiffusion/blob/f159a5236009a971c7f7b3477a6aa86a69a050ae/scripts/create_test_data.sh#L8C25-L8C33).
+Download GRAB Objects and upzip it.
+
+Put the folder `contact_meshes` in the `/data/GRAB/tools/object_meshes`. Or put the folder `contact_meshes` in the other folder and edit the `--obj-path` in [this file](https://github.com/JunukCha/HOIDiffusion/blob/f159a5236009a971c7f7b3477a6aa86a69a050ae/scripts/create_test_data.sh#L8C25-L8C33).
 
 ### 6. Download midas_models
 ```
